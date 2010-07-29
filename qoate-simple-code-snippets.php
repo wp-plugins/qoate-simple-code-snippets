@@ -35,7 +35,7 @@ function load_plugin() {
 
 // Add settings link on plugin page
 function qoate_scs_settings_link($links) { 
-  $settings_link = '<a href="http://qoate.com/">Qoate.com</a>'; 
+  $settings_link = '<a target="_blank" href="http://qoate.com/">Qoate.com</a>'; 
   array_unshift($links, $settings_link); 
   return $links; 
 }
