@@ -15,6 +15,8 @@ A very simple to use Code Snippet plugin that shows your code in the WordPress C
 This plugins lets you easily add code snippets to your posts, and shows them in the WordPress Codex style.
 Very clean, light-weight and easy to use!
 
+Also, unlike some other syntax highlighters/code snippet plugins out here it will strip the shortcodes from your excerpt, so even when in an excerpt your code will look good!
+
 More info:
 
 * [Qoate Simple Code Snippets](http://qoate.com/wordpress-plugins/simple-code-snippets/)
