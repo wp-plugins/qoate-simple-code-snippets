@@ -4,7 +4,7 @@ Donate link: http://qoate.com/donate/
 Tags: code,snippets,code snippets,syntax
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 1.1
+Stable tag: 1.2
 
 A very simple to use Code Snippet plugin that shows your code in the WordPress Codex style. Easy & Clean.
 
@@ -34,6 +34,8 @@ Just put your code between [code] and [/code]
 For more questions and answers go and have a look at [Qoate.com](http://qoate.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
+= 1.2 =
+Strips shortcodes from all other pages and excerpts.
 
 = 1.1 =
 Added feeds functionality.
