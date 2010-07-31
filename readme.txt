@@ -1,10 +1,10 @@
 === Plugin Name ===
 Contributors: Qoate
 Donate link: http://qoate.com/donate/
-Tags: code,snippets,code snippets
+Tags: code,snippets,code snippets,syntax
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 1.0
+Stable tag: 1.1
 
 A very simple to use Code Snippet plugin that shows your code in the WordPress Codex style. Easy & Clean.
 
@@ -13,13 +13,7 @@ A very simple to use Code Snippet plugin that shows your code in the WordPress C
 = Qoate Simple Code Snippets =
 
 This plugins lets you easily add code snippets to your posts, and shows them in the WordPress Codex style.
-Simply put your code between `[code]` and `[/code]` tags, and the 10 lines of plugin code does a perfect job for you.
-
-* No JS hassle
-* Easy copying
-* Clean look
-* Light-weight
-* Very easy
+Very clean, light-weight and easy to use!
 
 More info:
 
@@ -35,11 +29,14 @@ Follow the instruction on the [Qoate Newsletter Sign Up](http://qoate.com/wordpr
 
 = How to post a snippet? =
 
-Just put your code between `[code]` and `[/code]`
+Just put your code between [code] and [/code]
 
 For more questions and answers go and have a look at [Qoate.com](http://qoate.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
+
+= 1.1 =
+Added feeds functionality.
 
 = 1.0 =
 Release.
