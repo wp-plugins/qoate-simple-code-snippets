@@ -15,7 +15,10 @@ A very simple to use Code Snippet plugin that shows your code in the WordPress C
 This plugins lets you easily add code snippets to your posts ands pages, and shows them in the WordPress Codex style.
 Very clean, light-weight and easy to use!
 
-Also, unlike some other syntax highlighters/code snippet plugins out here it will strip the shortcodes from your excerpt, so even when in an excerpt your code will look good!
+Unlike some other syntax highlighters plugins this plugin will also make your code look good in excerpts and rss feeds. Your shortcodes won't be
+visible anywhere, and code will still be code, not some messed up text. 
+
+It's as easy as wrapping your code inside `[code]` and `[/code]`. No manual encoding guaranteed!
 
 More info:
 
@@ -31,14 +34,13 @@ Follow the instruction on the [Qoate Newsletter Sign Up](http://qoate.com/wordpr
 
 = How to post a snippet? =
 
-Just put your code between [code] and [/code]
+Just put your code between `[code]` and `[/code]`
 
 For more questions and answers go and have a look at [Qoate.com](http://qoate.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
 = 1.2.1 =
-Added page functionality, better stripping from all other pages.
-At war with feedburner..
+Added page functionality, better stripping from all other pages, excerpts and feeds.
 
 = 1.2 =
 Strips shortcodes from all other pages and excerpts.
