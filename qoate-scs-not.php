@@ -7,7 +7,7 @@ add_filter('the_content','qoate_strip_shortcodes');
 function qoate_strip_shortcodes($content){
 	$content=str_replace('[code]','<pre>',$content);
 	$content=str_replace('[/code]','</pre>',$content);
-	$content=htmlspecialchars($content,ENT_NOQUOTES,'UTF-8',false);
+	$content=htmlspecialchars($content,ENT_NOQUOTES,'UTF-8');
 return $content;
 }
 
