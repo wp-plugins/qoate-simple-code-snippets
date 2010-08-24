@@ -8,7 +8,11 @@ function add_qoate_scs_style(){
 }
 
 function qoate_replace_code($atts,$content) {
-	$content ='<pre class="qoate-code">'.htmlspecialchars($content,ENT_NOQUOTES,'UTF-8').'</pre>';
+	if(version_compare(PHP_VERSION,'5.2.3')== -1) {
+		$content ='<pre class="qoate-code">'.htmlspecialchars($content,ENT_NOQUOTES,'UTF-8').'</pre>';
+	} else {
+		$content ='<pre class="qoate-code">'.htmlspecialchars($content,ENT_NOQUOTES,'UTF-8',false).'</pre>';
+	}
 	return $content;
 }
 
