@@ -4,7 +4,7 @@ Donate link: http://qoate.com/donate/
 Tags: code,snippets,code snippets,syntax
 Requires at least: 2.0
 Tested up to: 3.0
-Stable tag: 1.2.4
+Stable tag: 1.3
 
 A very simple to use Code Snippet plugin that shows your code in the WordPress Codex style. Easy & Clean.
 
@@ -39,6 +39,9 @@ Just put your code between `[code]` and `[/code]`
 For more questions and answers go and have a look at [Qoate.com](http://qoate.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
+= 1.3 =
+Allow WordPress auto paragraphing again, paragraph elements do now need to be manually encoded (temporary).
+
 = 1.2.4 =
 Fixed a htmlspecialchars bug for older version of PHP. Thanks <a href="http://www.haungo.com/">Hau Ngo</a>, for mentioning!
 

@@ -1,6 +1,5 @@
 <?php
 add_action('wp_print_styles','add_qoate_scs_style');
-remove_filter('the_content','wpautop');
 add_shortcode('code', 'qoate_replace_code');
 
 function add_qoate_scs_style(){
@@ -13,6 +12,8 @@ function qoate_replace_code($atts,$content) {
 	} else {
 		$content ='<pre class="qoate-code">'.htmlspecialchars($content,ENT_NOQUOTES,'UTF-8',false).'</pre>';
 	}
+	$content = str_replace('&lt;p&gt;','',$content);
+	$content = str_replace('&lt;/p&gt;','<br />',$content);
 	return $content;
 }
 
