@@ -3,7 +3,7 @@
 Plugin Name: Qoate Simple Code Snippets
 Plugin URI: http://qoate.com/wordpress-plugins/simple-code-snippets/
 Description: Add code snippets to your posts easily, WordPress codex style.
-Version: 1.3
+Version: 2.0
 Author: Danny van Kooten
 Author URI: http://qoate.com
 License: GPL2
@@ -25,15 +25,8 @@ License: GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-add_action("wp", "load_plugin");
+include('qoate-scs-script.php');
 
-function load_plugin() {
-	if(is_single() || is_page()) {
-      include('qoate-scs-script.php');
-   } elseif (is_home() || is_archive() || is_category() || is_tag() || is_feed()){
-		include('qoate-scs-not.php');
-   }
-}
 
 // Add settings link on plugin page
 function qoate_scs_settings_link($links) { 

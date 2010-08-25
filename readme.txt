@@ -39,6 +39,10 @@ Just put your code between `[code]` and `[/code]`
 For more questions and answers go and have a look at [Qoate.com](http://qoate.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
+= 2.0 =
+All tags are allowed again, and when using archive/category pages that show full posts the snippet now also has styling. If you experience any problems,
+please let me know, it is of great help!
+
 = 1.3 =
 Allow WordPress auto paragraphing again, paragraph elements do now need to be manually encoded (temporary).
 
