@@ -3,7 +3,7 @@
 Plugin Name: Qoate Simple Code Snippets
 Plugin URI: http://qoate.com/wordpress-plugins/simple-code-snippets/
 Description: Add code snippets to your posts easily, WordPress codex style.
-Version: 2.0
+Version: 2.1
 Author: Danny van Kooten
 Author URI: http://qoate.com
 License: GPL2
@@ -25,15 +25,56 @@ License: GPL2
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 
-include('qoate-scs-script.php');
+class Qoate_Simple_Code_Snippets {
 
+	function __construct()
+	{
+		remove_filter('the_content','wpautop');
+		add_filter('the_content','wpautop',99);
+		add_action('wp_print_styles',array(&$this,'add_stylesheet'));
+		add_shortcode('code', array(&$this,'replace_code'));
+		add_filter('the_excerpt_rss',array(&$this,'strip_shortcodes'));
+		add_filter('the_content_rss',array(&$this,'strip_shortcodes'));
+		add_filter('the_excerpt',array(&$this,'strip_shortcodes'),1);
+		add_filter('the_content',array(&$this,'strip_shortcodes'),99);
+		
+		if(is_admin()) {
+			$plugin = plugin_basename(__FILE__); 
+			add_filter("plugin_action_links_$plugin", array(&$this,'add_settings_link'));
+		}
+	}
+	
+	function replace_code($atts,$content)
+	{
+		if(version_compare(PHP_VERSION,'5.2.3')== -1) {
+			$content ='<pre class="qoate-code">'.htmlspecialchars($content,ENT_NOQUOTES,'UTF-8').'</pre>';
+		} else {
+			$content ='<pre class="qoate-code">'.htmlspecialchars($content,ENT_NOQUOTES,'UTF-8',false).'</pre>';
+		}
+		
+		return $content;
+	}
+	
+	function add_stylesheet()
+	{
+		wp_enqueue_style('qoate_scs_style', WP_CONTENT_URL . '/plugins/qoate-simple-code-snippets/css/scs-style.css');
+	}
+	
+	function strip_shortcodes($content)
+	{
+		$content=str_replace('[code]','<pre>',$content);
+		$content=str_replace('[/code]','</pre>',$content);
+		return $content;
+	}
+	
+	function add_settings_link($links)
+	{
+		$settings_link = '<a target="_blank" href="http://DannyvanKooten.com/">DannyvanKooten.com</a>'; 
+		array_unshift($links, $settings_link); 
+		return $links; 
+	}
 
-// Add settings link on plugin page
-function qoate_scs_settings_link($links) { 
-  $settings_link = '<a target="_blank" href="http://qoate.com/">Qoate.com</a>'; 
-  array_unshift($links, $settings_link); 
-  return $links; 
 }
-$plugin = plugin_basename(__FILE__); 
-add_filter("plugin_action_links_$plugin", 'qoate_scs_settings_link' );
+
+$Qoate_Simple_Code_Snippets = new Qoate_Simple_Code_Snippets();
 ?>

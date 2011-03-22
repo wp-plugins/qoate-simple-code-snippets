@@ -1,10 +1,10 @@
 === Plugin Name ===
-Contributors: Qoate
-Donate link: http://qoate.com/donate/
-Tags: code,snippets,code snippets,syntax
+Contributors: DvanKooten
+Donate link: http://dannyvankooten.com/donate/
+Tags: code,snippets,code snippets,syntax,programming
 Requires at least: 2.0
-Tested up to: 3.0
-Stable tag: 1.3
+Tested up to: 3.1
+Stable tag: 2.1
 
 A very simple to use Code Snippet plugin that shows your code in the WordPress Codex style. Easy & Clean.
 
@@ -22,13 +22,13 @@ It's as easy as wrapping your code inside `[code]` and `[/code]`. No manual enco
 
 More info:
 
-* [Qoate Simple Code Snippets](http://qoate.com/wordpress-plugins/simple-code-snippets/)
-* Read more great [WordPress tips](http://qoate.com/) to get the most out of your website
-* Check out more [WordPress plugins](http://qoate.com/wordpress/) by the same author
+* [Simple Code Snippets](http://dannyvankooten.com/wordpress-plugins/simple-code-snippets/)
+* Read more great [WordPress tips](http://dannyvankooten.com/) to get the most out of your website
+* Check out more [WordPress plugins](http://dannyvankooten.com/wordpress-plugins/) by the same author
 
 == Installation ==
 
-Follow the instruction on the [Qoate Newsletter Sign Up](http://qoate.com/wordpress-plugins/simple-code-snippets/) page.
+Follow the instruction on the [Simple Code Snippets](http://dannyvankooten.com/wordpress-plugins/simple-code-snippets/) page on my website.
 
 == Frequently Asked Questions ==
 
@@ -36,9 +36,13 @@ Follow the instruction on the [Qoate Newsletter Sign Up](http://qoate.com/wordpr
 
 Just put your code between `[code]` and `[/code]`
 
-For more questions and answers go and have a look at [Qoate.com](http://qoate.com/wordpress-plugins/simple-code-snippets/)
+For more questions and answers go and have a look at [DannyvanKooten.com](http://dannyvankooten.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
+
+= 2.1 =
+Changed plugin structure, now using classes for better / safer compatibility.
+
 = 2.0 =
 All tags are allowed again, and when using archive/category pages that show full posts the snippet now also has styling. If you experience any problems,
 please let me know, it is of great help!
