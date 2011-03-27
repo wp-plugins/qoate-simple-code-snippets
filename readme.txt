@@ -4,7 +4,7 @@ Donate link: http://dannyvankooten.com/donate/
 Tags: code,snippets,code snippets,syntax,programming
 Requires at least: 2.0
 Tested up to: 3.1
-Stable tag: 2.1
+Stable tag: 2.1.1
 
 A very simple to use Code Snippet plugin that shows your code in the WordPress Codex style. Easy & Clean.
 
@@ -34,11 +34,14 @@ Follow the instruction on the [Simple Code Snippets](http://dannyvankooten.com/w
 
 = How to post a snippet? =
 
-Just put your code between `[code]` and `[/code]`
+Simple, just put your code between `[code]` and `[/code]`
 
 For more questions and answers go and have a look at [DannyvanKooten.com](http://dannyvankooten.com/wordpress-plugins/simple-code-snippets/)
 
 == Changelog ==
+
+= 2.1.1 =
+Added the <a href="http://dannyvankooten.com">DannyvanKooten.com</a> dashboard widget.
 
 = 2.1 =
 Changed plugin structure, now using classes for better / safer compatibility.
